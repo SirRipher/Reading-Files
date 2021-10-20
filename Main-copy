@@ -1,0 +1,33 @@
+#--------
+#Reading_files
+#Graden_Rusk
+#October13_2021
+#--------
+
+#----Functions----#
+
+def months():
+    file = open('Months.text', 'r')
+    month_names = file.read()
+    print()
+    print(month_names)
+    change()
+    
+def change():
+    try:
+        print("Type it like this:1432")
+        awnser = int(input("What order do you think they go in?\n>>>" ))
+        
+        if awnser == 124568910123711:
+            print("Really?!? thanks!")
+        else:
+            print("are you sure?")
+            change()
+    except:
+        print(change)
+    
+#----Code_starts_here----#
+print("Hey, How are you? Im good. I was wondering")
+print("What are the days of the month in order?")
+print("I'll even give you a wordbank, just please help me out.")
+months()
